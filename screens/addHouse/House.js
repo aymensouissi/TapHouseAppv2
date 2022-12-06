@@ -30,7 +30,7 @@ const House = ({navigation}) => {
   };
     const handlePost = () =>{
       axios
-      .post(`http://192.168.97.99:3001/house/add/"hna idddddddd"`,values)
+      .post(`http://192.168.104.10:3001/house/add/"hna idddddddd"`,values)
       .then((response) => {
        console.log(response)
       })

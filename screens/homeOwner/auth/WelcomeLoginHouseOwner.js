@@ -24,7 +24,7 @@ const WelcomeLoginHouseOwner = ({ navigation}) => {
 
   const handleSubmit = () => {
     axios
-      .post(`http://192.168.11.197:3001/owner/login`, onLogin)
+      .post(`http://192.168.104.10.197:3001/owner/login`, onLogin)
       .then((response) => {
         console.log(response.data);
         setOnLogin(response.data)

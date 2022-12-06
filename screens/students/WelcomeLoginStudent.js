@@ -22,7 +22,7 @@ const WelcomeLoginStudent = ({ navigation}) => {
     };
     const handleSubmit = () => {
       axios
-        .post(`http://192.168.11.197:3001/student/login`, onLogin)
+        .post(`http://192.168.104.10.197:3001/student/login`, onLogin)
         .then((response) => {
           console.log(response.data);
           setOnLogin(response.data)
@@ -169,7 +169,7 @@ const styles = StyleSheet.create({
     left: 0,
     width: 119,
     height: 119,
-    opacity: 0.3,
+    opacity: 12,
   },
   rectangleRNPTextInput: {
     position: "absolute",

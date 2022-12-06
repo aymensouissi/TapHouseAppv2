@@ -18,7 +18,7 @@ const ValidationScrenStudent = ({route}) => {
       activationCode:verify
     }
     console.log(route.params,"<<===route.params")
-    axios.post(`http://192.168.11.226:3001/student/check`,verificationBody.id).then((result)=>{
+    axios.post(`http://192.168.104.10.226:3001/student/check`,verificationBody.id).then((result)=>{
     navigation.navigate("WelcomeLoginStudent")
     alert('thank you for joining TapHome')
     }).catch((err)=>{console.log(err.message)})

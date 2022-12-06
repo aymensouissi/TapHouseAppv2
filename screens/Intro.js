@@ -1,10 +1,8 @@
 import * as React from "react";
 import { Pressable, Image, StyleSheet, Text } from "react-native";
 import { useNavigation } from "@react-navigation/native";
-
 const Intro = () => {
   const navigation = useNavigation();
-
   return (
     <Pressable
       style={styles.introPressable}
@@ -40,13 +38,10 @@ const Intro = () => {
       </Pressable>
       <Text style={styles.helloThisOurFirstApplicati}>
         <Text style={styles.helloThisOurContainer}>
-       
           <Text
             style={styles.helpStudentsFor}>
               Hello this our first application to help students for a better experince in
                their university life and provide them with a interface for renting</Text>
-         
-         
         </Text>
       </Text>
       <Image
@@ -67,7 +62,6 @@ const Intro = () => {
     </Pressable>
   );
 };
-
 const styles = StyleSheet.create({
   ellipseIcon: {
     position: "absolute",
@@ -92,7 +86,6 @@ const styles = StyleSheet.create({
     width: "38.21%",
     height: "16.07%",
   },
-  
   studentText: {
     position: "absolute",
     top: 630,
@@ -207,5 +200,4 @@ const styles = StyleSheet.create({
     left: 180,
   }
 });
-
 export default Intro;

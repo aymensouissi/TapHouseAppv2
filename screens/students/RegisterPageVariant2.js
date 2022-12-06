@@ -43,7 +43,7 @@ const StudentRegister = ({navigation,route}) => {
 
       const handleSubmit = () => {
         console.log(data)
-        axios.post(`http://192.168.11.226:3001/student/register`,data)
+        axios.post(`http://192.168.104.10.226:3001/student/register`,data)
             .then((response) => {
               console.log(response.data.insertId, "=====id");
              
